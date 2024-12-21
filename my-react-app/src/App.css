@@ -17,11 +17,14 @@ body {
     background-color: #404eed; 
   }
   
-  .navbar-image {
+  .navbar-logo {
     height: 40px;
     cursor: pointer;
   }
-  
+
+  .menu-icon-image {
+    height: 40px;
+  }
   
   .hero {
     display: flex;

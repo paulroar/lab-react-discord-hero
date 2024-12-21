@@ -1,4 +1,3 @@
-import React from "react";
 import "./App.css";
 import Navbar from "./assets/Components/Navbar/Navbar";
 import Hero from "./assets/Components/Hero/Hero";
@@ -9,8 +8,7 @@ import Background from "./assets/Components/Hero/discord-background.png";
 function App() {
   return (
     <div className="App">
-      <Navbar url={NavDiscord} />
-      <Navbar url={NavMenu} />
+      <Navbar discordUrl={NavDiscord} menuUrl={NavMenu} />
       <div className="BarImage">
         <Hero url={Background} />
       </div>

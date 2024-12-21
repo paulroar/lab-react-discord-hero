@@ -1,24 +1,18 @@
-import React from "react";
 import PropTypes from "prop-types";
 import "./Navbar.css";
 
-function Navbar({ url }) {
+function Navbar({ discordUrl, menuUrl }) {
   return (
-      <div className="navbar">
-          <img src={url} alt="Navbar Logo" className="navbar-logo" />
-          <div className="menu-icon">
-              <img
-                  src="./assets/Components/Navbar/menu-icon.png"
-                  alt="Menu Icon"
-                  className="menu-icon-image"
-              />
-          </div>
-      </div>
+    <div className="navbar">
+      <img src={discordUrl} alt="Navbar Logo" className="navbar-logo" />
+      <img src={menuUrl} alt="Menu Icon" className="menu-icon-image" />
+    </div>
   );
 }
 
 Navbar.propTypes = {
-  url: PropTypes.string.isRequired,
+  discordUrl: PropTypes.string.isRequired,
+  menuUrl: PropTypes.string.isRequired,
 };
 
 export default Navbar;
